@@ -1,4 +1,5 @@
 #include "curves.h"
+#include <ctime>
 
 bool hasTxtExtension(const std::string& str) {
     size_t pos = str.rfind(".txt");
