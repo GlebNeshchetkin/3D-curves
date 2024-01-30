@@ -1,4 +1,4 @@
-#include "header.h"
+#include "curves.h"
 
 bool hasTxtExtension(const std::string& str) {
     size_t pos = str.rfind(".txt");
@@ -7,6 +7,7 @@ bool hasTxtExtension(const std::string& str) {
 }
 
 int main(int argc, char *argv[]) {
+    srand (time (0));
     bool writeToTxtFlag = false;
     std::ofstream outputFile_;
     std::string filename = "";
